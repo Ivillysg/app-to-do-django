@@ -1,0 +1,11 @@
+<h3>Atualizar</h3>
+
+<form method="POST" action="">
+	{% csrf_token %}
+
+	{{form}}
+	<a href="{% url 'list' %}" >Cancelar</a>
+	<input type="submit" name="Atualizar tarefa">
+	
+	
+</form>
